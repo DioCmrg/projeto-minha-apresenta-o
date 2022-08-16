@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /* background-image: url(./image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed; */
+    background-color: darkcyan;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 10px; */
+    /* border-bottom: 5px solid black; */
+    /* box-shadow: 1px 1px 10px 1px black; */
+    border-bottom: 15px ridge brown;
+}
+
+.logo {
+    padding-top: 32px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 8px;
+
+}
+header ul li a {
+    transition: 250ms;
+}
+
+header ul li a:hover {
+    color: darkviolet; 
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+#arrow {
+    font-size: 40px;
+    /* background-color: blue; */
+    /* animation: blink 1s steps(5, start) infinite; */
+}
+
+#arrow i {
+    cursor: pointer;
+}
+/* @keyframes blink {
+    to {
+        visibility: hidden;
+    }
+} */
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    padding-top: 28px;
+    width: 40%;
+    margin: 0 auto;
+    /* border: thick double black;
+    padding: 25px; */
+}
+
+.form input {
+    width: 50%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    background-color: white;
+}
+
+.form button {
+    width: 15%;
+    padding: 8px 12px;
+    background: linear-gradient(to right, darkviolet 50%, brown 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+
+    color: white;
+    font-weight: 600px;
+    cursor: pointer;
+    border: none;
+    transition: all 300ms ease-out;
+    border-radius: 0 8px 8px 0;
+    margin-top: 12px;
+    margin-left: -4px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+img {
+    max-width: 150px;
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 32px;
+    }
+    
+    .container .name h5 {
+        font-size: 16px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+    .logo {
+        max-width: 80%;
+        padding-left: 16px;
+    }
+
+    header ul {
+        padding-right: 32px;
+    }
+
+    header ul li a {
+        font-size: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}
